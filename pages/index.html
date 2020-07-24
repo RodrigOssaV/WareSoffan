@@ -1,11 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>WareSoffan</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <p>Hola Mundo</p>
+    <div class="navbarBody">
+        <!--Navbar -->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+            <a class="navbar-brand" href="#" onclick="volverAtras()"><i class="fa fa-home"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" 
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Ingresar
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#" onclick="clickProveedor()">Proveedor</a>
+                            <a class="dropdown-item" href="#" onclick="clickConductor()">Conductor</a>
+                            <a class="dropdown-item" href="#">Producto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Modificar
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#" onclick="">Proveedor</a>
+                            <a class="dropdown-item" href="#" onclick="">Conductor</a>
+                            <a class="dropdown-item" href="#" onclick="">Producto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Eliminar
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#" onclick="">Proveedor</a>
+                            <a class="dropdown-item" href="#" onclick="">Conductor</a>
+                            <a class="dropdown-item" href="#" onclick="">Producto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Estadísticas
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#">Conductor</a>
+                            <a class="dropdown-item" href="#">Proveedor</a>
+                            <a class="dropdown-item" href="#">Bodega</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--/.Navbar -->
+    </div>
+    <!-- Header de la pagina de soffan -->
+   
+    <!-- MAIN de la pagina de soffan -->
+    <div class="cuerpoPrincipal">
+        <div class="iconosCuerpoPrincipal">
+            <div class="modulo">
+                <div class="iconoProveedores">
+                    <img src="../icons/proveedor.png" alt="" onclick=clickProveedor() title="Módulo que permite el ingreso de proveedores al sistema">
+                </div>
+                <div class="letras">
+                    <p>Proveedores</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="iconoProveedores">
+                    <img src="../icons/conductores.png" alt="" onclick="clickConductor()" title="Módulo que permite el ingreso de conductores al sistema">
+                </div>
+                <div class="letras">
+                    <p>Conductores</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="iconoProveedores">
+                    <img src="../icons/sectores.png" title="Módulo que permite asociar un conductor a un sector determinado">
+                </div>
+                <div class="letras">
+                    <p>Localidades</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="iconoProveedores">
+                    <img src="../icons/bodega.png" title="Módulo que permite controlar la entrada y salida de productos de las bodegas de SOFFAN">
+                </div>
+                <div class="letras">
+                    <p>Status Bodega</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="iconoProveedores">
+                    <img src="../icons/producto.png" onclick="clickProducto()" title="Módulo que permite el ingreso de productos por proveedor al sistema">
+                </div>
+                <div class="letras">
+                    <p>Producto</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="iconoProveedores">
+                    <img src="../icons/badge.png" title="Módulo que permite ver estadísticas de proveedores, además de efectivadad de entrega por conductor">
+                </div>
+                <div class="letras">
+                    <p>Estadísticas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN de la pagina de soffan -->
+
+    <!-- MAIN secundario de la pagina de soffan -->
+    <div class="cuerpoSecundario">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ex at minima nobis saepe amet quas consectetur consequatur voluptate, molestias facilis harum hic officiis dolorem, odio culpa repellendus quos libero.</p>
+    </div>
+    <!-- MAIN secundario de la pagina de soffan -->   
+
+    <!-- Footer -->
+    <div class="footerPrincipal">
+        <footer class="page-footer font-small blue pt-4">
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+                    <!-- Grid row -->
+                    <div class="row">            
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">            
+                            <!-- Content -->
+                            <h5 class="text-uppercase">Footer Content</h5>
+                            <p>Here you can use rows and columns to organize your footer content.</p>            
+                        </div>
+                        <!-- Grid column -->            
+                        <hr class="clearfix w-100 d-md-none pb-3">            
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">            
+                            <!-- Links -->
+                            <h5 class="text-uppercase">Links</h5>            
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 4</a>
+                                </li>
+                            </ul>            
+                        </div>
+                        <!-- Grid column -->            
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">            
+                        <!-- Links -->
+                            <h5 class="text-uppercase">Links</h5>
+                    
+                            <ul class="list-unstyled">
+                                <li>
+                                <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                <a href="#!">Link 4</a>
+                                </li>
+                            </ul>           
+                        </div>
+                        <!-- Grid column -->            
+                    </div>
+                    <!-- Grid row -->            
+                </div>
+                <!-- Footer Links -->                       
+        </footer>
+    </div>
+    <!-- Footer -->
+
+    <!-- SCRIPTS de la pagina de soffan-->
+    <!-- JQuery -->    
+    <script src="../js/mov-funciones.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
 </body>
 </html>

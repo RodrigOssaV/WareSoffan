@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/cssingreso.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <form id="frmNuevoRegistro" class="border border-light p-4">
+            <p class="h3 mb-4 text-left">Nuevo proveedor</p>        
+            <input type="text" id="nombres" class="form-control mb-4" placeholder="Nombre" required>
+            <input type="text" id="precioagente" class="form-control mb-4" placeholder="Precio agente ($)" required>
+            <input type="text" id="precioexterno" class="form-control mb-4" placeholder="Precio externo ($)" required>
+            <input type="text" id="preciointerno" class="form-control mb-4" placeholder="Precio interno ($)" required>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+                </div>
+                <select class="browser-default custom-select" id="tipoproveedor" required>
+                  <option selected>Proveedor</option>
+                  <option value="Encomienda">Encomienda</option>
+                  <option value="Periodico">Periodico</option>
+                  <option value="Carta/Sobre">carta/sobre</option>
+                  <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <button id="btnCrearRegistro" class="btn btn-success btn-block my-4" type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Ingresar Proveedor</button>  
+        <div class="row espacio-vertical">
+            <div class="col">
+                <!-- <p class="h3 mb-4 text-center">Conductores registrados</p> -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio agente</th>
+                            <th>Precio externo</th>
+                            <th>Precio interno</th>
+                            <th>Tipo proveedor</th>
+                            <!-- <th>Acciones</th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="registros">
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="js/proveedor.js"></script>   
+    <script src="js/menuingreso.js"></script> -->
+</body>
+</html>

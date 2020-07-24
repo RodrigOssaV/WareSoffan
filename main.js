@@ -2,8 +2,10 @@ const { app, BrowserWindow } = require('electron')
 
 function createWindow(){
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1024,
+        height: 768,
+        maximizable: false,
+        // autoHideMenuBar: true,  //Mostrar barra menu principal
         webPreferences: {
             nodeIntegration: true
         }
@@ -11,7 +13,7 @@ function createWindow(){
 
     win.loadFile('main.html')
     
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)
