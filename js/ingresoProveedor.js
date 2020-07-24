@@ -11,7 +11,7 @@ class GestorProveedores{
         this.precioInterno = document.getElementById('precioInterno')
         this.btnCrearProveedor = document.getElementById('brnCrearProveedor')
 
-        this.agregarEventListeners();
+        this.agregarEventListeners()
     }
 
     agregarEventListeners(){
