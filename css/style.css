@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.navBarBody{
+    width: 100%;
+    height: 19%;
+    display: inline-block;
+}
+
+.cuerpoPrincipal{
+    width: 100%;
+    height: 39%;
+    /* background-color: white; */
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.cuerpoSecundario{
+    width: 100%;
+    height: 20%;
+    /* background-color: whitesmoke; */
+    display: inline-block;
+}
+
+.footerPrincipal{
+    margin-top: 2%;
+    width: 100%;
+    height: 19%;
+    display: inline-block;
+}
+
+.iconosCuerpoPrincipal{
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+.modulo{
+    width: 128px;
+    height: 100%;
+    display: inline-block;
+}
+
+.iconoProveedores:hover{
+    width: 128px;
+    height: 128px;
+    transform: scale(1.1);
+}
+
+.letras{
+    width: 100%;
+    height: 10%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.panel-izquierda{
+    width: 29%;
+    height: 100%;
+    float: left;
+}
+
+.panel-login-conductor{
+    border-radius: 15px;
+    width: 97%;
+    height: 97%;
+}
+
+.panel-derecha{
+    width: 69%;
+    height: 100%;
+    float: right;
+}
