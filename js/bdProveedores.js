@@ -28,6 +28,5 @@ exports.agregarProveedor = function(idProveedor, nombreProveedor, tipoProveedor,
 
     connection.query(queryIngreso, function(err,result){
         if(err) throw err
-        return result
     })
 }
