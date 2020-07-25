@@ -1,7 +1,7 @@
 // funciones en interacción con el usuario
 function clickProveedor(){
     var ventanaProveedor
-    var configuracionVentanaProveedor = "menubar = yes, location = yes, resizable = yes, scrollbars = yes, status = yes"
+    var configuracionVentanaProveedor = "width=480, height=700, status=1, minWidth=480, minHeight=700, maxWidth=480, maxHeight=700"
 
     function abrirVentanaProveedor(){
         ventanaProveedor = window.open("../pages/proveedor.html", "Ingreso proveedores a WareSoffan", configuracionVentanaProveedor)
@@ -10,16 +10,16 @@ function clickProveedor(){
     abrirVentanaProveedor()
 }
 
-// function clickConductor(){
-//     var ventanaConductor
-//     var configuracionVentanaConductor = "width: 1024px, height: 768px, menubar = yes, location = yes, resizable = yes, scrollbars = yes, status = yes"
+function clickConductor(){
+    var ventanaConductor
+    var configuracionVentanaConductor = "width=480, height=700, status=1, minWidth=480, minHeight=700, maxWidth=480, maxHeight=700"
 
-//     function abrirVentanaConductor() {
-//         ventanaConductor = window.open("conductor.html", "Ingreso conductores a WareSoffan", configuracionVentanaConductor)
-//       }
-//       // Llamamos a la función      
-//       abrirVentanaConductor()
-// }
+    function abrirVentanaConductor() {
+        ventanaConductor = window.open("conductor.html", "Ingreso conductores a WareSoffan", configuracionVentanaConductor)
+      }
+      // Llamamos a la función      
+      abrirVentanaConductor()
+}
 
 // function clickProducto(){
 //     var ventanaProducto
