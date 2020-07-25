@@ -5,8 +5,10 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/mdb.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/ingreso.css">
 </head>
 <body>
+<<<<<<< Updated upstream
     <form id="frmNuevoProveedor">
         <input type="text" id="idProveedor" placeholder="ID proveedor">
         <input type="text" id="nombreProveedor" placeholder="Nombre proveedor">
@@ -20,6 +22,45 @@
         <input type="text" id="precioInterno" placeholder="Precio interno">
         <input type="submit" value="" id="btnCrearProveedor">
     </form>
+=======
+    <div class="login-form">
+        <form id="frmNuevoProveedor">
+            <div class="avatar">
+                <img src="../icons/avatar.png" alt="Avatar">
+            </div>
+            <h2 class="text-center">Proveedores</h2>   
+            <div class="form-group">
+                <input type="text" id="idProveedor" placeholder="Codigo proveedor" required="Obligatorio" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="nombreProveedor" placeholder="Nombre proveedor" required="Obligatorio" class="form-control">
+            </div>        
+            <div class="form-group">
+                <select name="option" id="tipoProveedor" class="form-control" required="Obligatorio">
+                    <option value="">Ingrese tipo proveedor</option>
+                    <option value="Diario">Diario</option>
+                    <option value="Paqueteria">Paqueteria</option>
+                    <option value="Carta/Sobre">Carta/Sobre</option>
+                    <option value="Internacional">Internacional</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="precioAgente" placeholder="Precio agente" class="form-control" required="Obligatorio">
+            </div>
+            <div class="form-group">
+                <input type="text" id="precioExterno" placeholder="Precio externo" class="form-control" required="Obligatorio">
+            </div>
+            <div class="form-group">
+                <input type="text" id="precioInterno" placeholder="Precio interno" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar proveedor" id="btnCrearProveedor" class="form-control">
+            </div>            
+        </form>
+    </div>
+
+>>>>>>> Stashed changes
     <script src="../js/ingresoProveedor.js"></script>
 </body>
 </html>
