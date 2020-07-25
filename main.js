@@ -5,7 +5,7 @@ function createWindow(){
         width: 1024,
         height: 768,
         maximizable: false,
-        autoHideMenuBar: true,  //Mostrar barra menu principal
+        // autoHideMenuBar: true,  //Mostrar barra menu principal
         webPreferences: {
             nodeIntegration: true
         }
@@ -13,7 +13,7 @@ function createWindow(){
 
     win.loadFile('./pages/index.html')
     
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)
