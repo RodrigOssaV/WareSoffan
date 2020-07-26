@@ -4,7 +4,7 @@ function createWindow(){
     const win = new BrowserWindow({
         width: 1024,
         height: 768,
-        maximizable: false,
+        // maximizable: false,
         // autoHideMenuBar: true,  //Mostrar barra menu principal
         webPreferences: {
             nodeIntegration: true
