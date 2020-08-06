@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/ingreso.css">
+</head>
+<body>
+    <div class="login-form">
+        <form id="frmNuevoProducto">
+            <div class="avatar">
+                <img src="../icons/producto_in.png" alt="Avatar"> <!-- cambiar icono de productos -->
+            </div>
+            <h2 class="text-center">Productos</h2> 
+            <!-- <div class="form-group">
+                <input type="text" id="idProducto" placeholder="Codigo producto" required="Obligatorio" class="form-control">
+            </div> -->
+            <div class="form-group">
+                <input type="text" id="idProveedor" placeholder="Codigo proveedor" required="Obligatorio" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" id="fechaIngreso" placeholder="Fecha recepcion producto" required="Obligatorio" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="cantidadIngreso" placeholder="Cantidad recepcionada" class="form-control" required="Obligatorio">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Almacenar producto en bodega" id="btnCrearProducto" class="form-control">
+            </div>            
+        </form>
+    </div>
+
+    <script src="../js/ingresoProducto.js"></script>
+</body>
+</html>

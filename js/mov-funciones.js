@@ -10,7 +10,7 @@ function clickProveedor(){
 
 function clickConductor(){
     var ventanaConductor
-    var configuracionVentanaConductor = "width=480, height=700, status=1"//, minWidth=480, minHeight=700, maxWidth=480, maxHeight=700"
+    var configuracionVentanaConductor = "width=480, height=700, status=1, minWidth=480, minHeight=700, maxWidth=480, maxHeight=700"
     function abrirVentanaConductor() {
         ventanaConductor = window.open("../pages/conductor.html", "Ingreso conductores a WareSoffan", configuracionVentanaConductor)
       }    
