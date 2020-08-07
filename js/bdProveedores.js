@@ -30,3 +30,13 @@ exports.agregarProveedor = function(idProveedor, nombreProveedor, tipoProveedor,
         if(err) throw err
     })
 }
+
+exports.obtenerproveedor = function(operacion){
+    
+    connection.query("SELECT * FROM proveedores", function(err,result){
+        if(err){
+            console.log(err)
+        }
+        console.log("Esto son los resultados: ", result)
+    })
+};
