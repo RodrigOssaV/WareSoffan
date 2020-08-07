@@ -26,6 +26,15 @@ function clickProducto(){
     abrirVentanaProducto()
 }
 
+function mostrarProveedores(){
+    var ventanaProveedores
+    var configuracionVentanaProveedores = "status=1, minWidth=520, minHeight=560"
+    function abrirVentanaProveedores(){
+        ventanaProveedores = window.open("../pages/modProveedor.html", "Proveedores asociados a WareSoffan", configuracionVentanaProveedores)
+    }
+    abrirVentanaProveedores()
+}
+
 function volverAtras(){
     window.location = "../pages/index.html"
 }
