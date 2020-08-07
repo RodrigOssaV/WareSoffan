@@ -23,20 +23,16 @@ exports.agregarProveedor = function(idProveedor, nombreProveedor, tipoProveedor,
         precioExterno: precioExterno,
         precioInterno: precioInterno
     }
-    var queryIngreso = ("INSERT INTO proveedores SET ?", proveedor)
-    console.log(queryIngreso)
 
-    connection.query(queryIngreso, function(err,result){
+    connection.query("INSERT INTO proveedores SET ?", proveedor, function(err,result){
         if(err) throw err
     })
 }
 
-exports.obtenerproveedor = function(operacion){
-    
+exports.obtenerproveedor = function(operacion){    
     connection.query("SELECT * FROM proveedores", function(err,result){
-        if(err){
-            console.log(err)
+        if(result){
+            operacion(result)
         }
-        console.log("Esto son los resultados: ", result)
     })
-};
+}
