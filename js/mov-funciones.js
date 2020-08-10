@@ -51,4 +51,16 @@ function clickProducto(){
     }
     abrirVentanaProducto()
 }
+
+// ---- Función mostrar productos en bodega
+function clickBodega(){
+    var ventanaBodega
+    var configuracionVentanaBodega
+    function abrirVentanaBodega(){
+        ventanaBodega = window.open("../pages/showBodega.html", "Productos en Bodegas WareSoffan")
+    }
+    abrirVentanaBodega()
+}
+
+
 // funciones en interacción con el usuario

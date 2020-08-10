@@ -1,4 +1,40 @@
 body {
-	color: #fff;
 	background: #70c5c0;
+}
+
+.grande{
+	height: 100%;
+	width: 100%;
+}
+
+.arriba{
+	height: 20%;
+	width: 100%;
+	display: inline-block;
+}
+
+.medio{
+	height: 10%;
+	width: 100%;
+	display: inline-block;
+}
+
+.izquierda{
+	height: 80%;
+	width: 38%;
+	display: inline-block;
+	align-items: center;
+}
+
+.derecha{
+	height: 80%;
+	width: 60%;
+	display: inline-block;
+	align-items: center;
+}
+
+.abajo{
+	height: 70%;
+	width: 100%;
+	display: inline-block;
 }
