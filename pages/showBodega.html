@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <link href="../css/mostrarPaneles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="grande">
+        <div class="arriba">
+            <p class="h3 mb-4 text-center">Control Bodega WareSoffan</p>
+        </div>
+        <div class="medio">
+            <div class="izquierda"><p class="h4 mb-4 text-center">Buscar producto: </p></div>
+            <div class="derecha">
+                <form id="frmNuevaBusqueda">
+                    <div class="form-group">
+                        <select name="option" id="tipoConductor" class="form-control" required="Obligatorio">
+                            <option value="">Seleccione el mes a buscar</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="abajo">
+            <!--Table-->
+            <table id="tablePreview" class="table">
+                <!--Table head-->
+                <thead>
+                    <tr>
+                        <th>Código Proveedor</th>
+                        <th>Fecha Recepción Producto</th>
+                        <th>Cantidad Recepcionada</th>
+                    </tr>
+                </thead>
+                <!--Table head-->
+                <!--Table body-->
+                <tbody id="registrosconductores">
+                    
+                </tbody>
+                <!--Table body-->
+            </table>
+            <!--Table-->   
+        </div>
+    </div>
+    <script src="../js/mostrarBodega.js"></script>
+</body>
+</html>
