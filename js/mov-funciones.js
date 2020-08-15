@@ -23,6 +23,15 @@ function mostrarProveedores(){
     abrirVentanaProveedores()
 }
 
+function eliminarProveedor(){
+    var ventanaEliminarProveedor
+    var configuracionVentanaEliminarProveedor = "status=1"
+    function abrirVentanaEliminarProveedor(){
+        ventanaEliminarProveedor = window.open("../pages/deleteProveedores.html", "Eliminar proveedores asociados a WareSoffan", configuracionVentanaEliminarProveedor)
+    }
+    abrirVentanaEliminarProveedor()
+}
+
 // ---- Funciones de los conductores 
 function clickConductor(){
     var ventanaConductor
@@ -40,6 +49,15 @@ function mostrarConductores(){
         ventanaConductores = window.open("../pages/showConductores.html", "Conductores asociados a WareSoffan", configuracionVentanaConductores)
     }
     abrirVentanaConductores()
+}
+
+function eliminarConductor(){
+    var ventanaEliminarConductor
+    var configuracionVentanaEliminarConductor = "status=1"
+    function abrirVentanaEliminarConductor(){
+        ventanaEliminarConductor = window.open("../pages/deleteConductores.html", "Eliminar conductores asociados a WareSoffan", configuracionVentanaEliminarConductor)
+    }
+    abrirVentanaEliminarConductor()
 }
 
 // ---- Funciones de los productos

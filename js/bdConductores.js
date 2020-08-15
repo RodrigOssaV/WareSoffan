@@ -34,3 +34,9 @@ exports.obtenerconductor = function(operacion){
         }
     })
 }
+
+exports.eliminarConductor = function(rutConductor){
+    connection.query("DELETE FROM conductores where rutConductor = ?", rutConductor, function (error, results, fields){
+        if (error) throw error;
+    })
+}

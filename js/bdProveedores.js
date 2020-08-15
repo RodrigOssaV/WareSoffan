@@ -36,3 +36,9 @@ exports.obtenerproveedor = function(operacion){
         }
     })
 }
+
+exports.eliminarProveedor = function(idProveedor){
+    connection.query("DELETE FROM proveedores where idProveedor = ?", idProveedor, function (error, results, fields){
+        if (error) throw error;
+    })
+}
