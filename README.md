@@ -22,7 +22,7 @@ WareSoffan es un aplicación desarrollada en electron, por lo que debes tener in
 
 - Cree una base de datos de nombre *soffan_db*
 
-- Si todo sale bien, deberán salir resaldatos con un fondo verde Apache y MySQL.
+- Si todo sale bien, deberán salir resaltados con un fondo verde Apache y MySQL.
 
 # Instalación Base de Datos
 
