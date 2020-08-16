@@ -14,7 +14,7 @@ WareSoffan es un aplicación desarrollada en electron, por lo que debes tener in
 
 - Deberá acceder a la página oficial de XAMPP y descargar la aplicación.
 
-> [Descargar acá] (https://www.apachefriends.org/es/download.html)
+- (https://www.apachefriends.org/es/download.html)
 
 - Una vez instalado, presione START en el modulo APACHE y modulo MySQL.
 
