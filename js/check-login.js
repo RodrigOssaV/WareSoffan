@@ -7,6 +7,6 @@ function Login(){
         window.location = "./pages/index.html"
     }else{
         alert("Usuario y/o contraseña incorrectos")
-        javascript:location.reload()
+        location.reload()
     }
 } 
