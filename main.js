@@ -8,8 +8,8 @@ function createWindow(){
     const win = new BrowserWindow({
         width: 1024,
         height: 768,
-        // maximizable: false,
-        // autoHideMenuBar: true,  //Mostrar barra menu principal
+        maximizable: false,
+        autoHideMenuBar: true,  //Mostrar barra menu principal
         webPreferences: {
             nodeIntegration: true
         }
@@ -17,7 +17,7 @@ function createWindow(){
     
     win.loadFile('main.html')
     
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)
