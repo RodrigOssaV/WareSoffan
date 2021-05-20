@@ -19,7 +19,7 @@
   "homepage": "https://github.com/RodrigOssaV/app_electron#readme",
   "dependencies": {
     "electron-reload": "^1.5.0",
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "mysql": "^2.18.1"
   }
 }
